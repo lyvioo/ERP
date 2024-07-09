@@ -54,14 +54,14 @@ Static Function SaveNaoConformidade(nCodigo, cTipoNC, cDescNC, nQtdeNC, oDlg)
         MsgInfo("Todos os campos devem ser preenchidos!", "Erro")
     Else
         // Reclock de inserção 
-        DbSelectArea("ZZ1")
-        ZZ1->(DBSETORDER(1))
-        If !ZZ1->(RecLock("ZZ1",.T.))
-            ZZ1->Z1_FILIAL := xFilial("ZZ1")
-            ZZ1->Z1_CODIGO := GETSXENUM("ZZ1","Z1_CODIGO")
-            ZZ1->Z1_TIPO := cTipoNC
+        DbSelectArea("SZ1")
+        SZ1->(DBSETORDER(1))
+        If !SZ1->(RecLock("SZ1",.T.))
+            SZ1->Z1_FILIAL := xFilial("SZ1")
+            SZ1->Z1_CODIGO := GETSXENUM("SZ1","Z1_CODIGO")
+            SZ1->Z1_TIPO := cTipoNC
             // Coloque aqui os demais campos       
-            ZZ1->(MSUNLOCK())
+            SZ1->(MSUNLOCK())
             MsgStop("Erro na execução da query: " + TcSqlError(), "Erro")
         Else
             MsgInfo("Registro salvo com sucesso!", "Informação")
