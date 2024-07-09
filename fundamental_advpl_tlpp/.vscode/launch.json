@@ -1,0 +1,63 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "totvs_language_debug",
+			"request": "launch",
+			"name": "TOTVS Language Debug",
+			"program": "${command:AskForProgramName}",
+			"cwb": "${workspaceFolder}",
+			"smartclientBin": "C:/TOTVS/Protheus2310/Protheus/bin/smartclient/smartclient.exe",
+			"isMultiSession": true,
+			"enableTableSync": true,
+			"extendFeatures": {
+				"charDetails": false
+			}
+		}
+	],
+	"lastPrograms": [
+		{
+			"args": [],
+			"label": "u_HelloWord"
+		},
+		{
+			"label": "sIGAFAT"
+		},
+		{
+			"args": [],
+			"label": "u_NãoConformidadeCadastro"
+		},
+		{
+			"label": "u_NaoConformidadeCadastro"
+		},
+		{
+			"args": [],
+			"label": "u_NaoConformidadeCadastro"
+		},
+		{
+			"args": [],
+			"label": "u_RegistroNaoConformidade"
+		},
+		{
+			"args": [],
+			"label": "u_ListaNaoConformidades"
+		},
+		{
+			"args": [],
+			"label": "u_PTCSQLEx"
+		},
+		{
+			"label": "u_SaveDataToFile"
+		},
+		{
+			"args": [],
+			"label": "u_CriaTabelaNaoConformidade"
+		},
+		{
+			"args": [],
+			"label": "u_TesteSQL"
+		}
+	],
+	"lastProgramExecuted": "u_RegistroNaoConformidade",
+	"lastProgramArguments": []
+}
